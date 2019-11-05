@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title> JS
+	</title>
+
+
+
+ 
+</head>
+<body>
+
+<h1> Proyecto final JS</h1>
+
+<hr></hr>
+ <h1>Formulario</h1>
+ 	<div style="background-color: #95EEF7" >
+<form name="formulario" method="post" action="http://pagina.com/send.php">
+	<label for="nombre">
+	<p>Nombre:
+  	<input type="text" name="nombre" size="40" placeholder="Escriba su nombre">
+	</p>
+</label>
+
+	<label for="apellidos">
+	<p>Apellidos:
+  	<input type="text" name="apellidos" size="40" placeholder="Escriba sus dos apellidos">
+	</p>
+</label>
+<label for="correo">
+	<p>Correo: <input type="email" name="correo" size="40">
+	</p>
+</label>
+
+	<p>Ciudad:
+		<select id="menu" name="menu">
+    <optgroup label="ciudad">
+      <option value="2" label="Madrid">
+      <option value="3" label="Barcelona">
+    </optgroup>
+</select>
+</p>
+<p> Idiomas:
+<input type="checkbox" name="transporte" value="1"  checked>Español
+<input type="checkbox" name="transporte" value="2">Inglés
+<input type="checkbox" name="transporte" value="3">Alemán
+</p>
+<p>Sexo:
+	Hombre: <input type="radio" value="hombre">
+	Mujer: <input type="radio" value="mujer">
+</p>
+
+<input type="submit" value="enviar">
+</form>
+ 	</div>
+
+
+
+<script type="text/javascript">
+
+var menu = document.querySelector("#menu");
+document.createElement("p");
+
+
+</script>
+
+
+
+</body>
+</html>
