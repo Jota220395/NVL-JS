@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title> JS
+	</title>
+
+
+
+ 
+</head>
+<body>
+
+<h1> Introducción JS</h1>
+
+<hr></hr>
+ <h1>Lista de películas</h1>
+        <ul id="lista-pelis"></ul>
+<script type="text/javascript">
+
+
+
+var pelis = [
+    {
+        Nombre: "El señor de los anillos", 
+        Nombre: "Batman", 
+        Nombre: "Avatar", 
+        Nombre: "Jackie Chan", 
+        Genero: "Acción"
+    },
+    {
+        Nombre: "Regreso al Futuro",
+        Nombre: "Gun",
+        Genero: "Acción"
+    },
+    {
+        Nombre: "Los increibles 2",
+        Nombre: "Inside out",
+        Genero: "Animación"
+    },
+];
+
+addLi();
+
+function addLi() {
+    var contenido;
+    for (i = 0; i < pelis.length; i++) {
+      var li = document.createElement("li");
+      var p = document.createElement("p");
+      contenido = "Nombre:" + pelis[i].Nombre + " || Genero: " + pelis[i].Genero;
+      p.appendChild(document.createTextNode(contenido));
+      document.querySelector("#lista-pelis").appendChild(li).appendChild(p);
+    }
+}
+</script>
+
+
+
+</body>
+</html>
